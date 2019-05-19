@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'V2-ADD-DETAIL-PAGE-TITULO' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        
+    <form [formGroup]="paraForm" (ngSubmit)="onSignIn()">
+        <div class="row">
+          <div class="col-12">
+                  <table class="table" style="margin-left: auto; margin-right: auto">
+                     
+                        <tr>
+                                <td>
+                                        <ion-label style="margin-left: 8px">{{ 'V2-ADD-DETAIL-PAGE-NOMBRE' | translate}}</ion-label>  
+                                        <ion-input style="border: 1px solid;" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" type="text" name="nombre" class="form-control" id="nombre" placeholder="{{ 'V2-ADD-DETAIL-PAGE-NOMBRE' | translate}}" > </ion-input>
+                                        <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+                                                <div *ngIf="f.nombre.errors.required">{{ 'V2-ADD-DETAIL-PAGE-NOMBRE-ERROR' | translate}}</div>
+                                        </div>
+                                </td>
+
+                        </tr>
+                       
+                        <tr>
+                                  
+                                <td>
+                                        <ion-label style="margin-left: 8px">{{ 'V2-ADD-DETAIL-PAGE-APELLIDOS' | translate}}</ion-label>  
+                                        <ion-input style="border: 1px solid;" formControlName="apellidos" [ngClass]="{ 'is-invalid': submitted && f.apellidos.errors }" type="text" name="apellidos" class="form-control" id="apellidos" placeholder="{{ 'V2-ADD-DETAIL-PAGE-APELLIDOS' | translate}}" > </ion-input>
+                                        <div *ngIf="submitted && f.apellidos.errors" class="invalid-feedback">
+                                                <div *ngIf="f.apellidos.errors.required">{{ 'V2-ADD-DETAIL-PAGE-APELLIDOS-ERROR' | translate}}</div>
+                                        </div>
+                                </td>
+
+                        </tr>
+                             
+                        <tr>
+                                  
+                                <td>
+                                        <ion-label style="margin-left: 8px">{{ 'V2-ADD-DETAIL-PAGE-DNI' | translate}}</ion-label>  
+                                        <ion-input style="border: 1px solid;" formControlName="dni" [ngClass]="{ 'is-invalid': submitted && f.dni.errors }" type="text" name="dni" class="form-control" id="dni" placeholder="{{ 'V2-ADD-DETAIL-PAGE-DNI' | translate}}" > </ion-input>
+                                        <div *ngIf="submitted && f.dni.errors" class="invalid-feedback">
+                                                <div *ngIf="f.dni.errors.required">{{ 'V2-ADD-DETAIL-PAGE-DNI-ERROR' | translate}}</div>
+                                        </div>
+                                </td>
+
+                        </tr>
+                      
+                    </table>
+                        <div class="form-row mt-2 pt-3">
+                                <button class="btn btn-primary btn-lg">{{ 'V2-ADD-DETAIL-PAGE-GUARDAR' | translate}}</button>
+                        </div>
+                </div>
+      </div>
+      </form>
+</ion-content>

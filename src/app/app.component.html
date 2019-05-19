@@ -1,0 +1,21 @@
+<ion-app>
+      <app-header id="cabecera"></app-header>
+    {{ 'V1-PRINCIPAL-PAGE-LOGIN' | translate }}
+
+  <ion-menu contentId="content" side="start" menuId="first" id="menuLat">
+     <ion-header>
+        <ion-toolbar>
+           <ion-title>{{ 'MENU-TITULO' | translate }}</ion-title>
+        </ion-toolbar>
+     </ion-header>
+     
+     <ion-content> 
+        <ion-list>
+              <ion-item [routerLink]="'/v1-principal'" (click)="cerrar();">PRINCIPAL</ion-item>
+              <ion-item [routerLink]="'/v2-add-registro'" (click)="cerrar();">AÑADIR REGISTRO</ion-item>
+           </ion-list>
+     </ion-content>
+  </ion-menu>
+
+   <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-app>

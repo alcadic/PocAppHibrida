@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>v1-principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      {{ 'V1-PRINCIPAL-PAGE-LOGIN' | translate}}
+
+      <br>
+      <br>
+      <br>
+      <div class="table-responsive">
+        <table class="table" style="border:double">
+          <thead>
+            <tr style="border: dotted; cursor: pointer;">
+              <th scope="col" style="border: dotted">Nombre</th>
+              <th scope="col" style="border: dotted">Apellidos</th>
+              <th scope="col" style="border: dotted">Dni</th>
+              <th scope="col" style="border: dotted">#</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of usuarios; let i = index" style="border: dotted; cursor: pointer;">
+                <td (click)="editar(usuario)" style="border: dotted">{{usuario?.nombre}}</td>
+                <td (click)="editar(usuario)" style="border: dotted">{{usuario?.apellidos}}</td>
+                <td (click)="editar(usuario)" style="border: dotted">{{usuario?.dni}}</td>
+                <td (click)="eliminar(usuario)" style="border: dotted"><img src="../../../assets/images/delete.jpg" style="height: 20px;"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+</ion-content>

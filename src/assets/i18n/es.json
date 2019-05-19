@@ -1,0 +1,13 @@
+{
+  "V1-PRINCIPAL-PAGE-LOGIN": "PRINCIPAL",
+  "TEXTO-CABECERA": "CABECERA",
+
+  "V2-ADD-DETAIL-PAGE-TITULO" : "EDICION/NUEVO",
+  "V2-ADD-DETAIL-PAGE-NOMBRE" : "Nombre",
+  "V2-ADD-DETAIL-PAGE-NOMBRE-ERROR" : "El campo nombre es obligatorio",
+  "V2-ADD-DETAIL-PAGE-APELLIDOS" : "Apellidos",
+  "V2-ADD-DETAIL-PAGE-APELLIDOS-ERROR" : "El campo apellidos es obligatorio",
+  "V2-ADD-DETAIL-PAGE-DNI" : "DNI",
+  "V2-ADD-DETAIL-PAGE-DNI-ERROR" : "El campo DNI es obligatorio",
+  "V2-ADD-DETAIL-PAGE-GUARDAR" : "Guardar"
+}
